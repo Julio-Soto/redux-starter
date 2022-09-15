@@ -1,0 +1,20 @@
+{
+  "name": "redux-starter",
+  "version": "1.0.0",
+  "description": "Starter redux tutorial APP",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js"
+  },
+  "keywords": [
+    "redux",
+    "react"
+  ],
+  "author": "Julio Soto",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
+  }
+}
