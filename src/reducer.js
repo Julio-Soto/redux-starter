@@ -1,6 +1,6 @@
+let lastId = 0
 
-
-export function reducer(state,action) {
+export function reducer(state = [],action) {
     switch(action.type) {
         case 'bugAdded':
             return [
@@ -12,7 +12,7 @@ export function reducer(state,action) {
                 }
             ]
         case 'bugRemoved':
-            return state.filter(bug => BigInt.id === action.payload.id)
+            return state.filter(bug => bug.id !== action.payload.id)
         default:
             return state
     }
